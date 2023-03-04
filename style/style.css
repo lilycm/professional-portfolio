@@ -310,6 +310,10 @@ body{
 /* services section end */
 
 
+/* sills section start */
+.skills-section{
+    background-color:rgb(108, 11, 153);
+}
 
 /* portfilio section start */
 .portfolio-sec{
@@ -349,6 +353,7 @@ body{
     background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
     radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
     ;
+    width: 100%;
 }
 .images{
     margin-top: 30px;
@@ -376,9 +381,6 @@ body{
     border-radius: 18px;
     height: 30vh;
 
-}
-.previous-sec{
-    background-color: #e7a9cb;
 }
 .previous-work{
     grid-template-columns: repeat(3, 1fr);
@@ -413,6 +415,9 @@ color: aliceblue;
     backdrop-filter: blur(10px);
     border-bottom:2px solid rgba(255, 255, 255, .2);
     align-items: center;
+    }
+    .container{
+        padding: 0;
     }
     .first-section{
         background-color: rgb(108, 11, 153);
@@ -460,9 +465,6 @@ color: aliceblue;
     .about .hire-me {
         margin-bottom: 15px;
     }
-    .first-section{
-        width: 100%;
-    }
     .portfolio-sec .projects img{
         width: 100%;
         height: 50vw;
@@ -479,7 +481,7 @@ color: aliceblue;
     }
     .previous-work{
         grid-template-columns: repeat(1, 1fr);
-        margin-left: 33px;
+        margin-left: 0px;
     }
     .card2{
         margin-top: 15px;
