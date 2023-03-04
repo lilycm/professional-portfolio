@@ -1,3 +1,9 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+/* nav section start */
 .navbar{
     width: 100%;
     height: 5vw;
@@ -29,6 +35,10 @@
 .navbar a:hover{
     color: rgb(5, 255, 213);
 }
+/* nav section end */
+
+
+/* home section start */
 .welcome{
     margin-top: 180px;
     align-items: center;
@@ -42,6 +52,9 @@
         width: 100%;
         height: 100vh;
     }
+    /* home section end */
+
+
     /* about section start */
 .about-section{
     background-color: rgb(108, 11, 153);
@@ -68,6 +81,8 @@
     }
 
    /* about section end */
+
+
  /* services section start */
  .services-sec{
     background-color: rgb(108, 11, 153);
@@ -229,6 +244,10 @@
         background-position: 400%;
     }
 }
+/* services section end */
+
+
+
 /* portfilio section start */
 .portfolio-sec{
     background-color: rgb(108, 11, 153);
@@ -256,6 +275,10 @@
     transform: scale(1.2);
     border-radius: 10px;
 }
+/* portfolio section end */
+
+
+
 /* sample section start */
 
 .sample-sec{
@@ -275,6 +298,10 @@
     transition: all 1.4s ease;
     border-radius: 10px;
 }
+/* smaple section end */
+
+
+
 /* footer section start */
 .footer{
     background:rgb(56, 0, 82);
@@ -287,6 +314,11 @@ color: aliceblue;
     text-decoration: none;
     color: aliceblue;
 }
+/* footer section end */
+
+
+
+/* media query for mobile start */
 @media screen and (max-width:767px){
     .navbar{
         position: fixed;
@@ -379,6 +411,10 @@ color: aliceblue;
         text-align: center;
     }
 }
+/* media query for mobile end */
+
+
+/* media query for tab strt */
 @media screen and (min-width: 768px) and (max-width:992px){
     .first-section{
         width: 100%;
@@ -436,3 +472,4 @@ color: aliceblue;
         justify-content: center;
         }
 }
+/* media query for tab end */
