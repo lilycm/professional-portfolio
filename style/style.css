@@ -1,0 +1,438 @@
+.navbar{
+    width: 100%;
+    height: 5vw;
+    background: rgba(255, 255, 255, .1);
+    transition: .3s;
+    backdrop-filter: blur(10px);
+    border-bottom:2px solid rgba(255, 255, 255, .2);
+    align-items: center;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    transition: 1s;
+}
+.navbar:hover:before{
+    left: 100%;
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: larger;
+    margin-left: 20px;
+}
+.navbar a:hover{
+    color: rgb(5, 255, 213);
+}
+.welcome{
+    margin-top: 180px;
+    align-items: center;
+    justify-content: center;
+    }
+    .first-section{
+        background-color: rgb(108, 11, 153);
+        background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
+        radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
+        ;
+        width: 100%;
+        height: 100vh;
+    }
+    /* about section start */
+.about-section{
+    background-color: rgb(108, 11, 153);
+    background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
+    radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
+    ;
+}
+.about {
+    margin-top: 150px;
+}
+.about h1{
+        font-weight: 800;
+        font-size: 50px;
+        color: transparent;
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        background-image: url(/images/color-multiple.png);
+        -webkit-background-clip: text;
+        animation: back 20s linear infinite;
+    }
+    @keyframes back{
+        100%{
+            background-position: 1000px 0;  
+        }
+    }
+
+   /* about section end */
+ /* services section start */
+ .services-sec{
+    background-color: rgb(108, 11, 153);
+        background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
+        radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
+        ;
+   }
+.container-2{
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+    perspective: 400px;
+}
+.container-2:hover > .card-1{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card-1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.card-1:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.front,
+.front-1,
+.front-2,
+.front-3,
+.front-4,
+.front-5,
+.back,
+.back-1,
+.back-2,
+.back-3,
+.back-4,
+.back-5{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front{
+    background-image: url(/icons/web-design\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    background-color: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    backdrop-filter: blur(10px);
+    border:2px solid rgba(255, 255, 255, .2);
+}
+.front-1{
+    background-image: url(/icons/audio\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    background-color: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    backdrop-filter: blur(10px);
+    border:2px solid rgba(255, 255, 255, .2);
+}
+.front-2{
+    background-image: url(/icons/curve\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    background-color: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    backdrop-filter: blur(10px);
+    border:2px solid rgba(255, 255, 255, .2);
+}
+.front-3{
+    background-image: url(/icons/camera\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    background-color: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    backdrop-filter: blur(10px);
+    border:2px solid rgba(255, 255, 255, .2);
+}
+.front-4{
+    background-image: url(/icons/animation\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    background-color: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    backdrop-filter: blur(10px);
+    border:2px solid rgba(255, 255, 255, .2);
+}
+.front-5{
+    background-image: url(/icons/film-editing\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    background-color: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+    backdrop-filter: blur(10px);
+    border:2px solid rgba(255, 255, 255, .2);
+}
+.back,
+.back-1,
+.back-2,
+.back-3,
+.back-4,
+.back-5{
+    background-color: rgba(255, 255, 255, .1);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.front{
+    justify-content: center;
+    align-items: center;
+}
+.button1 {
+    position: relative;
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin: 50px 100px;
+    color: #000;
+    top: 270px;
+}
+.button1:first-child{
+    background: linear-gradient(90deg, #f442a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    color: #000;
+}
+ .button1:first-child::before{
+    content: "";
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    transition: opacity 0.5s;
+    color: #000;
+    opacity: 0;
+}
+
+.button1{
+    animation: glow 8s linear infinite;
+}
+@keyframes glow {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+/* portfilio section start */
+.portfolio-sec{
+    background-color: rgb(108, 11, 153);
+    background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
+    radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
+    ;
+}
+.project img{
+    height: 20vw;
+}
+.projects img{
+    height: 20vw;
+}
+.project img{
+    transition: transform 1500ms;
+}
+.projects img{
+    transition: transform 1500ms;
+}
+.project img:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+.projects img:hover{
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+/* sample section start */
+
+.sample-sec{
+    background-color: rgb(108, 11, 153);
+    background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
+    radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
+    ;
+}
+.images{
+    margin-top: 30px;
+}
+.images img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+ .images img{
+    transition: all 1.4s ease;
+    border-radius: 10px;
+}
+/* footer section start */
+.footer{
+    background:rgb(56, 0, 82);
+}
+.footer-link a{
+text-decoration: none;
+color: aliceblue;
+}
+.privacy a{
+    text-decoration: none;
+    color: aliceblue;
+}
+@media screen and (max-width:767px){
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0px;
+    width: 100%;
+    height: 15vw;
+    background: rgba(255, 255, 255, .1);
+    transition: .3s;
+    backdrop-filter: blur(10px);
+    border-bottom:2px solid rgba(255, 255, 255, .2);
+    align-items: center;
+    }
+    .first-section{
+        background-color: rgb(108, 11, 153);
+        background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
+        radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
+        ;
+        width: 100%;
+        height: 50vh;
+    }
+    .welcome{
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+        }
+    .about p{
+        margin-top: 5px;
+        text-align: center;
+    }
+    .about .button{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .services-sec{
+        width: 100%;
+    }
+    .portfolio-sec{
+        width: 100%;
+    }
+    .about-section{
+        width: 100%;
+    }
+    .about-section img{
+        width: 80%;
+        margin-left: 50px;
+    }
+    .about-section .about{
+        text-align: center;
+    }
+    .about {
+        margin-top: 50px;
+    }
+    .about .hire-me {
+        margin-bottom: 15px;
+    }
+    .first-section{
+        width: 100%;
+    }
+    .sample-sec{
+        width: 100%;
+    }
+    .sample-sec .project img{
+        width: 100%;
+        height: 50vw;
+    }
+    .portfolio-sec .project img{
+        width: 100%;
+        height: 50vw;
+    }
+    .portfolio-sec .projects img{
+        width: 100%;
+        height: 50vw;
+    }
+    .portfolio-sec .project{
+        margin-top: 20px;
+    }
+    .portfolio-sec .projects{
+        margin-top: 20px;
+    }
+    .sample-sec .project{
+        margin-top: 20px;
+    }
+    
+    .footer{
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) and (max-width:992px){
+    .first-section{
+        width: 100%;
+    }
+    .services-sec{
+        width: 100%;
+    }
+    .portfolio-sec{
+        width: 100%;
+    }
+    .about-section{
+        width: 100%;
+    }
+    .sample-sec{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+        text-align: center;
+    }
+    .about-section img{
+        width: 40vw;
+        height: 37vw;
+        margin-left: 10px;
+    }
+    .about {
+        margin-top: 10px;
+    }
+    .about .hire-me{
+        padding: 5px 7px;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0px;
+    width: 100%;
+    height: 15vw;
+    background: rgba(255, 255, 255, .1);
+    transition: .3s;
+    backdrop-filter: blur(10px);
+    border-bottom:2px solid rgba(255, 255, 255, .2);
+    align-items: center;
+    }
+    .first-section{
+        background-color: rgb(108, 11, 153);
+        background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
+        radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
+        ;
+        width: 100%;
+        height: 50vh;
+    }
+    .welcome{
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+        }
+}
