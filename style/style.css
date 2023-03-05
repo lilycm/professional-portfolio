@@ -26,10 +26,6 @@ body{
 .navbar:hover:before{
     left: 100%;
 }
-.container{
-    padding: 0;
-    margin: 0;
-}
 .navbar a{
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -346,9 +342,7 @@ body{
     transform: scale(1.2);
     border-radius: 10px;
 }
-.project-row{
-    margin-left: 80px;
-}
+
 /* portfolio section end */
 
 
