@@ -91,7 +91,7 @@ body{
             animation-delay: 3s;
         }
         .bubble img:nth-child(4){
-            animation-delay: 9s;
+            animation-delay: 5ms;
         }
         .bubble img:nth-child(5){
             animation-delay: .1s;
@@ -396,33 +396,25 @@ body{
 }
 .contact-section .color{
     position: absolute;
-    filter: blur(130px);
+    filter: blur(100px);
 }
 .contact-section .color:nth-child(1){
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
     background-color: #ff0080;
-    top: 3750px;
 }
 .contact-section .color:nth-child(2){
-    width: 500px;
-    height: 500px;
+    width: 250px;
+    height: 250px;
     background-color: #f0f19b;
-    bottom:-3730px;
-    left: 550px;
 }
 .contact-section .color:nth-child(3){
-    width: 400px;
-    height: 400px;
+    width: 150px;
+    height: 150px;
     background-color: #7d019c;
-    bottom:-3700px;
-    right: 480px;
 }
-.box{
-    position: relative;
-}
+
 .container-form{
-    position: relative;
     width: 600px;
     height:80vh;
     background: rgba(255, 255, 255, .3);
@@ -442,53 +434,16 @@ body{
     position: relative;
 }
 .form h4{
-    position: relative;
     color: aliceblue;
     font-weight: 600;
     font-size: 20x;
     letter-spacing: 1px;
     margin-bottom: 40px;
 }
-.form .inputBox{
-    width: 100%;
-    margin-top: 20px;
-}
-.form .inputBox input{
-    width: 100%;
-    background: rgba(255, 255, 255, .2);
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border: 1px solid rgba(255, 255, 255, .5);
-    border-right:1px solid rgba(255, 255, 255, .2);
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
-    border-radius: 5px;
-    font-size: 16px;
-    letter-spacing: 1px;
-}
-.form .inputBox2 input{
-    width: 100%;
-    background: rgba(255, 255, 255, .2);
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border: 1px solid rgba(255, 255, 255, .5);
-    border-right:1px solid rgba(255, 255, 255, .2);
-    border-bottom: 1px solid rgba(255, 255, 255, .2);
-    border-radius: 5px;
-    font-size: 16px;
-    letter-spacing: 1px;
-    margin-top: 20px;
-}
-.form .inputBox input::placeholder{
-    color: #dff1ff;
-}
-.form .inputBox input[type="submit"]{
-    background: #f1f4f9;
-color: black;
-max-width: 100px;
-font-weight: 600;
-}
+
+
+
+
 /* footer section start */
 .footer{
     background:rgb(56, 0, 82);
@@ -521,6 +476,9 @@ color: aliceblue;
     }
     .contact-section{
         width: 100%;
+    }
+    .sample-sec .card2{
+        margin-left: 45px;
     }
     .contact-section .color:nth-child(1){
         width: 0px;
