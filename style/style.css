@@ -15,16 +15,20 @@ body{
 }
 .navbar::before{
     content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
+    left: 0;
+   left: -100%;
     width: 100%;
     height: 100%;
+    position: absolute;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
     transition: 1s;
 }
 .navbar:hover:before{
     left: 100%;
+}
+.container{
+    padding: 0;
+    margin: 0;
 }
 .navbar a{
     color: rgb(255, 255, 255);
@@ -53,7 +57,7 @@ body{
         height: 100vh;
     }
 
-    .bubble img{
+    /* .bubble img{
         width: 50px;
         animation: bubble 6s linear infinite;
         }
@@ -110,7 +114,7 @@ body{
         }
         .bubble img:nth-child(10){
             animation-delay: .1s;
-        }
+        } */
     /* home section end */
 
 
@@ -342,6 +346,9 @@ body{
     transform: scale(1.2);
     border-radius: 10px;
 }
+.project-row{
+    margin-left: 80px;
+}
 /* portfolio section end */
 
 
@@ -474,6 +481,15 @@ color: aliceblue;
     border-bottom:2px solid rgba(255, 255, 255, .2);
     align-items: center;
     }
+    .navbar::before{
+        content: "";
+        left: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+        transition: 1s;
+    }
     .contact-section{
         width: 100%;
     }
@@ -493,6 +509,15 @@ color: aliceblue;
         bottom:0px;
         left: 0px;
     }
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+    .container-form .form h4{
+        text-align: center;
+        color: #000;
+        margin-top: 5px;
+    }
     .contact-section .color:nth-child(3){
         width: 0px;
         height: 0px;
@@ -501,7 +526,7 @@ color: aliceblue;
         right:0px;
     }
     .form{
-        width: 60vw;
+        width: 80vw;
         height: 100%;
     }
     .container{
@@ -581,6 +606,9 @@ color: aliceblue;
     }
     .portfolio-sec .projects{
         margin-top: 20px;
+    }
+    .project-row{
+        margin: 0px;
     }
     .previous-work{
         grid-template-columns: repeat(1, 1fr);
