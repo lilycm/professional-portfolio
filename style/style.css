@@ -256,7 +256,12 @@ button.navbar-toggler.collapsed{
 .skills-section{
     background-color: rgb(90, 18, 97);
 }
-
+.logos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
 /* portfilio section start */
 .portfolio-sec{
     background-color:  rgb(90, 18, 97);
