@@ -370,8 +370,12 @@ button.navbar-toggler.collapsed{
     border-radius: 18px;
     padding-bottom:  15px;
 }
-
-
+.icon img{
+    margin: 0 10px;
+}
+.form{
+    margin: 10px 40px;
+}
 
 /* footer section start */
 .footer{
