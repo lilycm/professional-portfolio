@@ -13,8 +13,14 @@ body{
     border-bottom:2px solid rgba(255, 255, 255, .2);
     align-items: center;
 }
+.container-fluid{
+    padding: 0;
+}
 button.navbar-toggler.collapsed{
     padding: 0;
+}
+button.navbar-toggler{
+    padding: 4px 0px;
 }
 .navbar::before{
     content: "";
@@ -46,7 +52,11 @@ button.navbar-toggler.collapsed{
     margin-top: 180px;
     align-items: center;
     justify-content: center;
+    padding: 0;
     }
+.welcome  h1{
+    padding: 0;
+}
     .first-section{
         background-color: rgb(90, 18, 97);
         background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
@@ -143,6 +153,7 @@ button.navbar-toggler.collapsed{
     background-color: rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
     border:2px solid rgba(255, 255, 255, .2);
+    padding: 0;
 }
 .front-1{
     background-image: url(/icons/audio\ \(1\).png);
@@ -152,6 +163,7 @@ button.navbar-toggler.collapsed{
     background-color: rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
     border:2px solid rgba(255, 255, 255, .2);
+    padding: 0;
 }
 .front-2{
     background-image: url(/icons/curve\ \(1\).png);
@@ -161,6 +173,7 @@ button.navbar-toggler.collapsed{
     background-color:rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
     border:2px solid rgba(255, 255, 255, .2);
+    padding: 0;
 }
 .front-3{
     background-image: url(/icons/camera\ \(1\).png);
@@ -170,6 +183,7 @@ button.navbar-toggler.collapsed{
     background-color: rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
     border:2px solid rgba(255, 255, 255, .2);
+    padding: 0;
 }
 .front-4{
     background-image: url(/icons/animation\ \(1\).png);
@@ -179,6 +193,7 @@ button.navbar-toggler.collapsed{
     background-color: rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
     border:2px solid rgba(255, 255, 255, .2);
+    padding: 0;
 }
 .front-5{
     background-image: url(/icons/film-editing\ \(1\).png);
@@ -188,6 +203,7 @@ button.navbar-toggler.collapsed{
     background-color: rgba(255, 255, 255, .2);
     backdrop-filter: blur(10px);
     border:2px solid rgba(255, 255, 255, .2);
+    padding: 0;
 }
 .back,
 .back-1,
@@ -312,34 +328,16 @@ button.navbar-toggler.collapsed{
 
 
 
-/* sample section start */
-
-.sample-sec{
-    background-color:  rgb(90, 18, 97);
-    background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
-    radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
-    ;
-    width: 100%;
-}
-.images{
-    margin-top: 30px;
-}
-.images img:hover{
-    transform: scale(1.2);
-    cursor: pointer;
-}
- .images img{
-    transition: all 1.4s ease;
-    border-radius: 10px;
-}
-/* smaple section end */
 
 /* privious section start */
+.sample-sec{
+    background-color: rgb(90, 18, 97);
+}
 .card2{
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(255, 255, 255, .2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     border-radius: 18px;
     padding-bottom:  15px;
 }
@@ -355,7 +353,7 @@ button.navbar-toggler.collapsed{
     align-items: center;
 }
 .card2{
-    margin: 20px 30px;
+    margin: 20px 35px;
 }
 /* contact section start */
 .contact-section{
@@ -379,7 +377,7 @@ button.navbar-toggler.collapsed{
 
 /* footer section start */
 .footer{
-    background:rgb(56, 0, 82);
+    background:rgb(114, 5, 109);
     height: 30vh;
 }
 .footer-link a{
@@ -401,10 +399,10 @@ color: aliceblue;
         top: 0;
         left: 0px;
     width: 100%;
-    height: 15vw;
+    height: 25vw;
     background: rgba(255, 255, 255, .1);
     transition: .3s;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     border-bottom:2px solid rgba(255, 255, 255, .2);
     align-items: center;
     }
@@ -460,7 +458,7 @@ color: aliceblue;
         padding: 0;
     }
     .first-section{
-        background-color:  rgb(36, 0, 53);
+        background-color:  rgb(132, 0, 150);
         background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
         radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
         ;
@@ -476,12 +474,12 @@ color: aliceblue;
         margin-top: 5px;
         text-align: center;
     }
-    .about .button{
+    .about .hire-me {
         align-items: center;
         justify-content: center;
         display: flex;
         padding: 0;
-        margin-bottom: 20px;
+       margin: 0px 0px;
     }
     .container-form{
         position: relative;
@@ -565,6 +563,16 @@ color: aliceblue;
     .skill-sec{
         width: 100%;
     }
+    .logos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        margin: 15px 40px;
+        
+    }
     .footer{
         width: 100%;
         text-align: center;
@@ -575,6 +583,28 @@ color: aliceblue;
 
 /* media query for tab strt */
 @media screen and (min-width: 768px) and (max-width:992px){
+
+    .navbar{
+        position: fixed;
+        top: 0;
+        left: 0px;
+    width: 100%;
+    height: 35vh;
+    background: rgba(255, 255, 255, .1);
+    transition: .3s;
+    backdrop-filter: blur(5px);
+    border-bottom:2px solid rgba(255, 255, 255, .2);
+    align-items: center;
+    }
+    .navbar::before{
+        content: "";
+        left: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+        transition: 1s;
+    }
     .first-section{
         width: 100%;
     }
@@ -593,7 +623,7 @@ color: aliceblue;
     }
     .about-section img{
         width: 40vw;
-        height: 37vw;
+        height: 37vh;
         margin-left: 10px;
     }
     .about {
@@ -636,12 +666,18 @@ color: aliceblue;
             margin-top: 15px;
         }
         .card2 img{
-            height: 30vh;
+            height: 20vh;
         }
         .sample-sec{
             width: 100%;
         }
         .contact-section{
+            width: 100%;
+        }
+        .skills-section{
+            width: 100%;
+        }
+        .portfolio-sec{
             width: 100%;
         }
         .contact-section .color:nth-child(1){
