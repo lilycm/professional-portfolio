@@ -69,7 +69,7 @@ button.navbar-toggler{
     /* about section start */
 .about-section{
     background-color:  rgb(90, 18, 97);
-    background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
+    background-image: radial-gradient(100px circle at 5% 17%, white, transparent 100%),
     radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
     ;
 }
@@ -281,6 +281,9 @@ button.navbar-toggler{
 .logo{
     margin: 15px 60px;
     
+}
+.logo img{
+    width: 4vw;
 }
 .logo img{
     transition: all 1s ease;
@@ -514,6 +517,15 @@ color: aliceblue;
     }
     .about {
         margin-top: 50px;
+    }
+    .about-span{
+        padding: 0 25px;
+    }
+    button.navbar-toggler{
+        margin-right: 30px;
+    }
+    .logo img{
+        width: 10vw;
     }
     .about .hire-me {
         margin-bottom: 15px;
