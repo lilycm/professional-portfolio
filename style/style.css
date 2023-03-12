@@ -95,9 +95,7 @@ button.navbar-toggler{
  /* services section start */
  .services-sec{
     background-color:  rgb(90, 18, 97);
-        background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
-        radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
-        ;
+    background-image: radial-gradient(220px circle at 90% 50%, rgb(151, 144, 144), transparent 100%);
    }
 .container-serv{
     display: grid;
@@ -292,8 +290,7 @@ button.navbar-toggler{
 /* portfilio section start */
 .portfolio-sec{
     background-color:  rgb(90, 18, 97);
-    background-image: radial-gradient(270px circle at 0% 0%, white, transparent 100%),
-    radial-gradient(220px circle at 90% 70%, rgb(151, 144, 144), transparent 100%)
+    background-image: radial-gradient(220px circle at 90% 50%, rgb(151, 144, 144), transparent 100%)
     ;
 }
 .port{
