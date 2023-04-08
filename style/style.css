@@ -573,6 +573,9 @@ color: aliceblue;
     .skill-sec{
         width: 100%;
     }
+    .card-1{
+        width: 300px;
+    }
     .logos{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
